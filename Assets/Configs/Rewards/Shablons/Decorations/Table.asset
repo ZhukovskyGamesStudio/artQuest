@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2db1e8b1594e07a4fd57d252af69bb, type: 3}
+  m_Name: Table
+  m_EditorClassIdentifier: 
+  MinWave: 10
+  MaxWave: 10
+  Weight: 100000
+  Type: 3
+  CostWavePoints: 50
+  IsExclusive: 1
+  Sprite: {fileID: 21300000, guid: d6d04b0ec4abcf94fa762024f56f54f4, type: 3}
+  Name: Table
+  Id: 4
+  MinPixels: 60
+  CostPerPixel: 0.5
+  DecorationType: 2
+  CustomStatsText: 'Attract adventurer: {0}%'
+  PowerPerPixel: 0.0055

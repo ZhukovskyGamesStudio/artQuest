@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5723e357364cd58d49d10b11d1175a, type: 3}
+  m_Name: NobodyClass
+  m_EditorClassIdentifier: 
+  Type: 1
+  Cost: 0
+  DefaultStats:
+    Hp: 10
+    Speed: 3
+    Damage: 2
+    MovePoints: 0
+    SwipeDamage: 0
+    Defense: 0
+    CleanDamage: 0
+    DodgeChance: 0
+  Fighter: {fileID: 7825835408688916119, guid: a2bc8acb50d7155428470e6de801a82c, type: 3}
+  Icon64: {fileID: 21300000, guid: b5d59fa2a4c46a441ba68922fed10254, type: 3}
