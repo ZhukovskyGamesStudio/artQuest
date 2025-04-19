@@ -28,7 +28,7 @@ public class TavernDecorateDialog : DialogBase {
 
     private void FillGrid() {
         _gridViewMap = new Dictionary<Decoration, DecorationGridView>();
-        List<PlacedDecoration> placedList = FindObjectsOfType<PlacedDecoration>().ToList();
+        List<PlacedDecoration> placedList = FindObjectsByType<PlacedDecoration>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList();
         foreach (PlacedDecoration placedDecoration in placedList) {
             placedDecoration.Subscribe(OnEndDrag, OnRemove);
             placedDecoration.ChangeCanDrag(true);
@@ -56,14 +56,14 @@ public class TavernDecorateDialog : DialogBase {
     }
 
     private void ShowDecorsUI() {
-        PlacedDecoration[] objs = FindObjectsOfType<PlacedDecoration>();
+        PlacedDecoration[] objs = FindObjectsByType<PlacedDecoration>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
         foreach (var VARIABLE in objs) {
             VARIABLE.ShowRemoveButton(true);
         }
     }
 
     private void HideDecorsUI() {
-        PlacedDecoration[] objs = FindObjectsOfType<PlacedDecoration>();
+        PlacedDecoration[] objs = FindObjectsByType<PlacedDecoration>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
         foreach (var VARIABLE in objs) {
             VARIABLE.ShowRemoveButton(false);
         }
@@ -72,7 +72,7 @@ public class TavernDecorateDialog : DialogBase {
     public override void Close() {
         HideDecorsUI();
         TavernCore.Instance.SetUiVisibility(true);
-        List<PlacedDecoration> placedList = FindObjectsOfType<PlacedDecoration>().ToList();
+        List<PlacedDecoration> placedList = FindObjectsByType<PlacedDecoration>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).ToList();
         foreach (PlacedDecoration placedDecoration in placedList) {
             placedDecoration.Unsubscribe();
             placedDecoration.ChangeCanDrag(false);

@@ -15,13 +15,13 @@ public class EndFightPanel : MonoBehaviour {
     [SerializeField]
     private AdManager _adManager;
 
-    private bool _isWin;
+    //private bool _isWin;
 
     private List<Reward> _rewards, _allRewards;
 
     public void OpenLoseState(List<Reward> rewards, List<Reward> allRewards) {
         gameObject.SetActive(true);
-        _isWin = false;
+        //_isWin = false;
         _lostOrWinText.text = "Defeat";
         _explanationText.text = $"You get only {PERCENT}% of rewards";
         _rewards = rewards;
@@ -34,7 +34,7 @@ public class EndFightPanel : MonoBehaviour {
 
     public void OpenLeaveState(List<Reward> rewards) {
         gameObject.SetActive(true);
-        _isWin = true;
+        //_isWin = true;
         _lostOrWinText.text = "Escaped";
         _explanationText.text = "You get all rewards";
         _rewards = rewards;
@@ -44,7 +44,7 @@ public class EndFightPanel : MonoBehaviour {
 
     public void OpenWinState(List<Reward> rewards) {
         gameObject.SetActive(true);
-        _isWin = true;
+        //_isWin = true;
         _lostOrWinText.text = "Victory!";
         _explanationText.text = "You fought fabulously!";
         _rewards = rewards;

@@ -47,7 +47,7 @@ public class FightCore : MonoBehaviour {
 
     private Queue<Transform> _allyPosQueue, _enemyPosQueue;
     private List<Reward> _halfedRewards = new List<Reward>();
-    private bool _isLost = false;
+    //private bool _isLost = false;
     private RewardGenerator _rewardGenerator;
     private int _wave;
 
@@ -227,7 +227,7 @@ public class FightCore : MonoBehaviour {
             _endFightPanel.OpenLeaveState(_accumulatedRewards);
             _inFightButtons.gameObject.SetActive(false);
         } else {
-            _isLost = true;
+            //_isLost = true;
             _halfedRewards = CutRewardsByPercent(_accumulatedRewards, 0.5f);
             _endFightPanel.OpenLoseState(_halfedRewards, _accumulatedRewards);
             _inFightButtons.gameObject.SetActive(false);

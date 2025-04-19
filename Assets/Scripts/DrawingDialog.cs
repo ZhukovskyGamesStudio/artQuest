@@ -64,8 +64,8 @@ public class DrawingDialog : DialogBase {
         _drawingPanel.gameObject.SetActive(false);
         _drawnPixels = new Dictionary<Color32, int>();
         _drawnPixelsAmount = 0;
-        foreach (var VARIABLE in FindObjectsOfType<ColorsSet>()) {
-            VARIABLE.ResetPixelAmounts();
+        foreach (ColorsSet var in FindObjectsByType<ColorsSet>(FindObjectsInactive.Exclude, FindObjectsSortMode.None)) {
+            var.ResetPixelAmounts();
         }
 
         _createGearPanel.gameObject.SetActive(false);
