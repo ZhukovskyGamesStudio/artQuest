@@ -130,4 +130,81 @@ MonoBehaviour:
     IsChangingBackground: 0
     BackgroundSprite: {fileID: 0}
     BackgroundName: 
+  - Points: 400
+    DifficultyPoints: 100
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 900
+    DifficultyPoints: 150
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 1000
+    DifficultyPoints: 160
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 1200
+    DifficultyPoints: 175
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
+  - Points: 500
+    DifficultyPoints: 110
+    PossibleEnemies:
+    - {fileID: 11400000, guid: 04e70ac93a3acd548ad5e67d06d64839, type: 2}
+    IsChangingBackground: 0
+    BackgroundSprite: {fileID: -7912298583207001778, guid: 56b0c77e7ec47014a95fbb497d774982, type: 3}
+    BackgroundName: 
   MultiplierOnEndWaveCycle: 0
