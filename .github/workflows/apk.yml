@@ -10,6 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show disk space before build
+        run: df -h
+
+      - name: Free up space on runner
+        run: |
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo apt-get clean
+          df -h
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -18,15 +29,11 @@ jobs:
       - name: Cache Unity Library
         uses: actions/cache@v3
         with:
-          path: |
-            **/Library
-            **/Temp
-            **/Obj
-            **/Logs
+          path: Library
           key: ${{ runner.os }}-unity-${{ hashFiles('**/Packages/manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-unity-
-      
+
       - name: Build Android .aab
         uses: game-ci/unity-builder@v4
         with:
@@ -48,3 +55,9 @@ jobs:
         with:
           name: Android-APK
           path: build/Android/*.apk
+
+      - name: Clean up after build
+        if: always()
+        run: |
+          sudo rm -rf Library Temp Obj Logs
+          df -h
