@@ -1,4 +1,4 @@
-name: Build and Deploy Unity Game to Google Play
+name: Build and Store Android APK
 
 on:
   workflow_dispatch:
